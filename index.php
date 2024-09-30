@@ -6,7 +6,7 @@
     <title>zapateria</title>
 </head>
 <body>
-    <h1 >Zapateria la sangil</h1>
+    <h1 >Zapateria la sangileña</h1>
     <?php
     echo "hola";
     ?>
@@ -18,27 +18,68 @@
             <br>
             <button type = "submit">Ingresar</button>
         </form> 
-
-    <style>body {
-            font-family: Arial, sans-serif;
+        <style>
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 20px;
-            background-color: #33fcff;
-            color:#ff33fc;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
         h1 {
-            color: #ff33fc   ;
+            margin-bottom: 20px;
+            color: #4CAF50;
         }
 
-        p {
-            line-height: 1.5;
+        #div_inicio_sesion {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
         }
 
-        a {
-            color: #ff33fc;
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border 0.3s;
         }
 
+        input[type="text"]:focus, input[type="password"]:focus {
+            border: 1px solid #4CAF50;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    
 </style>
     </div>
 </body>
