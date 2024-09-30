@@ -6,7 +6,7 @@
     <title>zapateria</title>
 </head>
 <body>
-    <h1>Zapateria la sangil</h1>
+    <h1 >Zapateria la sangil</h1>
     <?php
     echo "hola";
     ?>
@@ -18,6 +18,28 @@
             <br>
             <button type = "submit">Ingresar</button>
         </form> 
+
+    <style>body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #33fcff;
+            color:#ff33fc;
+        }
+
+        h1 {
+            color: #ff33fc   ;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        a {
+            color: #ff33fc;
+        }
+
+</style>
     </div>
 </body>
 </html>

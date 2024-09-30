@@ -1,4 +1,9 @@
 <?php
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1');
+?>
+
+<?php
     require 'conexion.php';
 
     session_start();
@@ -7,7 +12,7 @@
     $clave = $_POST['clave'];
     
     // consulta a la bB
-    $consulta = "SELECT nombre_usuario, correo_usuario, password_usuario, COUNT(*) AS contar FROM Usuario WHERE correo_usuario = '$usuario' AND password_usuario = '$clave' ";
+    $consulta = "SELECT nombre_usuario, correo_usuario, password_usuario, COUNT(*) AS contar FROM usuario WHERE correo_usuario = '$usuario' AND password_usuario = '$clave' ";
 
     
     // ejecutar la consulta

@@ -23,8 +23,8 @@
     {
         die("la conexion a la BD fallo: "+ mysqli_error($conexion));
     }
-    else
-    {
-        die("Conexion exitosa a la BD")
-    }
+    //else
+    //{
+      //  die("Conexion exitosa a la BD")
+    //}
 ?>
