@@ -7,16 +7,13 @@
 <?php
 
     //Parametros de conexion a la BD
-    //DEFINE('USER','root');
-    //DEFINE('PW','');
-    //DEFINE('HOST','localhost');
-    //DEFINE('BD','zapatos' );
+    DEFINE('USER','root');
+    DEFINE('PW','');
+    DEFINE('HOST','localhost');
+    DEFINE('BD','zapatos' );
 
     //Conexion a la BD
-    //$conexion = mysqli_connect(HOST, USER, PW, BD);
-    $conexion = mysqli_connect('localhost', 'root', '', 'zapatos');
-
-    echo "arenas";
+    $conexion = mysqli_connect(HOST, USER, PW, BD);
 
     //Establecer caracteres para el hosting
     mysqli_set_charset($conexion,"utf8mb4");
